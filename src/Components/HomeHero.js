@@ -3,19 +3,18 @@ import Header from './Header';
 import styled from 'styled-components';
 import { theme } from '../utils/theme';
 import Button from './element/Button';
+import general from '../content/general.yaml';
 
 const Wrapper = styled.div`
   .has-background-image {
     background-image: url('images/front-page-header.jpg') !important;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
   }
   .dot {
-    height: 25px;
-    width: 25px;
-    background-color: ${theme.backgroundColorLite} !important;
-    border-radius: 50%;
-    display: inline-block;
+    vertical-align: sub;
+    color: ${theme.backgroundColorLite} !important;
   }
 `;
 
@@ -26,27 +25,27 @@ export default function HomeHero() {
         <div class="hero-head">
           <Header />
         </div>
-        <div class="hero-body">
-          <div class="container columns is-multiline has-text-centered">
-            <p class="column is-12 is-title has-text-XL has-text-white  has-text-weight-bold is-size-4-mobile">
+        <div class="hero-body has-text-centered">
+          <div class="container columns is-multiline is-centered">
+            <p class="is-title has-text-XL has-text-white  has-text-weight-bold is-size-3-mobile">
               Clean
-              <span class="dot"></span>
+              <span class="dot">•</span>
               Slick
-              <span class="dot"></span>
+              <span class="dot">•</span>
               Pixel Perfect
             </p>
-            <p class="column is-8 is-offset-2 has-text-white is-size-6 has-text-weight-normal is-size-7-mobile  mb-5">
-              lldy is a great one-page theme, perfect for developers and
-              designers but also for someone who just wants a new website for
-              his business. Try it now!
-            </p>
-            <div className="column is-half is-offset-one-quarter has-text-centered">
+            <div className="column is-8">
+              <p class="has-text-white is-size-6 has-text-weight-normal mb-5">
+                {general.description}
+              </p>
+            </div>
+            <div className="column is-7">
               <Button
-                className="button is-normal is-responsive py-5 px-6 is-size-6-mobile button-is-secondary  has-text-centered mr-5"
+                className="button is-normal is-responsive py-5 px-6 is-size-6-mobile button-is-secondary  has-text-centered m-4"
                 text="Learn more"
               />
               <Button
-                className="button is-normal is-responsive py-5 px-6 is-size-6-mobile button-is-primary  has-text-centered mr-5 "
+                className="button is-normal is-responsive py-5 px-6 is-size-6-mobile button-is-primary  has-text-centered m-4"
                 text="Download"
               />
             </div>

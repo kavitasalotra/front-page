@@ -1,0 +1,17 @@
+title: 'projects'
+subtitle: 'You'll love our work. Check it out!'
+works:
+  - id: 1
+    title: 'franc'
+    color: '#876889'
+    value: 60
+
+  - id: 1
+    title: 'franc 2'
+    color: '#358875'
+    value: 82
+
+  - id: 1
+    title: 'franc22'
+    color: '#168907'
+    value: 86

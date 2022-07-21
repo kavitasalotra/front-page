@@ -1,21 +1,19 @@
 import React from 'react';
-import about from '../content/about.yaml';
+// import project from '../content/project.yaml';
 import Heading from './element/Heading';
-import ProgressBar from './ProgressBar';
 
-export default function About() {
+export default function Projects() {
   return (
     <section class="section is-medium has-text-centered">
       <div className="container">
         <div className="columns is-multiline is-centered">
           <div className="column is-10">
-            <Heading text={about.title} />
+            <Heading text="Projects" />
             <h2 class=" has-text-grey-lite is-size-6 has-text-weight-normal">
-              {about.description}
+              You'll love our work. Check it out!
             </h2>
           </div>
         </div>
-        <ProgressBar works={about.works} />
       </div>
     </section>
   );

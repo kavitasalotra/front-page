@@ -26,6 +26,7 @@ export const theme = {
   backgroundInputColor: lightShades,
   backgroundColorLite: mainBrandColor,
   backgroundColorLight: '#222f36',
+
   // Font sizes
   fontSizeBase: '20px',
   fontSizeSmall: '23px',
@@ -41,6 +42,7 @@ export const theme = {
   textColorPrimary: '#5e5e5e',
   textColorSecondary: darkShades,
   textColorwhitelite: '#fff',
+  textColorpuple: lightCreamAccent,
 
   // FONTS FAMILY
   primaryFontFamily: "'Lato', sans-serif",
@@ -50,11 +52,12 @@ export const theme = {
 const GlobalStyle = createGlobalStyle`
   body{
     font-family: ${theme.primaryFontFamily} !important;
+    line-height: 26px;
   }
   .is-title{
     font-family: ${theme.SecondaryFontFamily}  !important;
   }
-  .has-text-grey-light {
+  .has-text-grey-lite {
     color: ${theme.textColorGreyLite};
   }
   .has-text-white{
@@ -63,11 +66,17 @@ const GlobalStyle = createGlobalStyle`
   .has-text-white-lite{
     color:${theme.textColorwhitelite};
   }
+  .has-text-secondary{
+    color:${theme.textColorSecondary};
+  }
   .has-text-color{
     color:${theme.textColor}!important;
   }
   .has-text-lite {
     color: ${theme.textColorLite}!important;
+  }
+  .has-text-purple {
+    color: ${theme.textColorpuple}!important;
   }
   .has-background-light{
     background-color:${theme.backgroundColorLight} !important;
@@ -99,8 +108,13 @@ const GlobalStyle = createGlobalStyle`
     background-color:${theme.mainBrandColor} !important;
     color:${theme.textColorwhite}!important;
     border-color:transparent;
+    min-width: 242px;
+    border: 3px solid ${theme.mainBrandColor} !important;
+    transition: all .3s;
   :hover{
       background-color:${theme.backgroundColor} !important;
+      border: 3px solid ${theme.backgroundColor}  !important;
+      color:${theme.textColorwhite};
   }
   }
 .button-is-secondary{
@@ -108,8 +122,10 @@ const GlobalStyle = createGlobalStyle`
   background: transparent !important;
   border: 3px solid #fff;
   border-radius: 3px;
+  min-width: 242px;
+  transition: all .3s;
   :hover{
- background-color: rgba( 0, 0, 0, .1 );
+ background-color: rgba( 0, 0, 0, .1 )important;
   border: 3px solid #fff;
     color:${theme.textColorwhite}!important;
   }
