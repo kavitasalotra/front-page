@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from './Header';
 import styled from 'styled-components';
+import Header from './Header';
 import { theme } from '../utils/theme';
 import Button from './element/Button';
 import general from '../content/general.yaml';
@@ -21,21 +21,21 @@ const Wrapper = styled.div`
 export default function HomeHero() {
   return (
     <Wrapper>
-      <section class="hero has-background-image is-medium">
-        <div class="hero-head">
+      <section className="hero has-background-image is-medium">
+        <div className="hero-head">
           <Header />
         </div>
-        <div class="hero-body has-text-centered">
-          <div class="container columns is-multiline is-centered">
-            <p class="is-title has-text-XL has-text-white  has-text-weight-bold is-size-3-mobile">
+        <div className="hero-body has-text-centered">
+          <div className="container columns is-multiline is-centered">
+            <p className="is-title has-text-XL has-text-white  has-text-weight-bold is-size-3-mobile">
               Clean
-              <span class="dot">•</span>
+              <span className="dot">•</span>
               Slick
-              <span class="dot">•</span>
+              <span className="dot">•</span>
               Pixel Perfect
             </p>
             <div className="column is-8">
-              <p class="has-text-white is-size-6 has-text-weight-normal mb-5">
+              <p className="has-text-white is-size-6 has-text-weight-normal mb-5">
                 {general.description}
               </p>
             </div>

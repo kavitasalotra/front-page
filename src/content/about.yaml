@@ -1,18 +1,19 @@
 title: 'About'
-description: 'It is an amaizng one-page theme with great features that offers an incredible experience. It is easy to install, make changes, adapt for your business. A modern design with clean lines and styling for a wide variety of content, exactly how a business design should be. You can add as many images as you want to the main header area and turn them into slider.'
+description: 'It is an amazing one-page theme with great features that offers an incredible experience. It is easy to install, make changes, adapt for your business. A modern design with clean lines and styling for a wide variety of content, exactly how a business design should be. You can add as many images as you want to the main header area and turn them into slider.'
 works:
   - id: 1
-    title: 'Typography'
+    title: '₳ Typography'
     color: '#F18B6D'
     value: 60
+    backgroundColor: '#F18B6D'
 
   - id: 1
-  icon:
-    title: 'Design'
+    title: '✎  Design'
     color: '#f1d204'
     value: 82
-
+    backgroundColor: '#f1d204'
   - id: 1
-    title: 'Development'
+    title: ' </> Development'
     color: '#6a4d8a'
     value: 86
+    backgroundColor: '#6a4d8a'

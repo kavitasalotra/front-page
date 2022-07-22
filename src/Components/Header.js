@@ -17,30 +17,30 @@ export default function Header() {
   return (
     <Wrapper>
       <div className="container py-2">
-        <nav class="navbar " role="navigation" aria-label="main navigation">
-          <div class="navbar-brand">
-            <a class="navbar-item" href="/">
+        <nav className="navbar " role="navigation" aria-label="main navigation">
+          <div className="navbar-brand">
+            <a className="navbar-item" href="/">
               <img src="images/cropped-logo-1.png" alt="logo" />
             </a>
             <a
               href=" "
               role="button"
-              class="navbar-burger"
+              className="navbar-burger"
               aria-label="menu"
               aria-expanded="false"
               data-target="navbarBasicExample"
             >
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
+              <span aria-hidden="true" />
+              <span aria-hidden="true" />
+              <span aria-hidden="true" />
             </a>
           </div>
           <div
             id="navbarBasicExample"
-            class="navbar-menu is-justify-content-flex-end"
+            className="navbar-menu is-justify-content-flex-end"
           >
-            <div class="navbar-end ">
-              <div class="navbar-item  is-size-6 has-text-weight-bold">
+            <div className="navbar-end ">
+              <div className="navbar-item  is-size-6 has-text-weight-bold">
                 <Link
                   to=" /"
                   class="navbar-item has-text-white ml-4 is-hovered"

@@ -85,7 +85,7 @@ const GlobalStyle = createGlobalStyle`
     background-color:${theme.backgroundColorLite} !important;
     }
     .has-background-purple{
-    background-color:${theme.backgroundColorpurple} !important;
+    background-color:${theme.backgroundColor} !important;
     }
 
   .text-base{

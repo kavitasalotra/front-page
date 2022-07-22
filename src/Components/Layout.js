@@ -1,7 +1,7 @@
 import 'bulma/css/bulma.css';
 import * as React from 'react';
-import Footer from '../Components/Footery';
 import { ThemeProvider } from 'styled-components';
+import Footer from './Footer';
 import GlobalStyle, { theme } from '../utils/theme';
 
 export default function Layout({ children }) {

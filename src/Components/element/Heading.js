@@ -2,7 +2,7 @@ import React from 'react';
 
 const Heading = ({ text, children }) => {
   return (
-    <h1 class="is-title text-medium has-text-secondary has-text-weight-bold mb-6">
+    <h1 className="is-title text-medium has-text-secondary has-text-weight-bold">
       {text || children}
     </h1>
   );

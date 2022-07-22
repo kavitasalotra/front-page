@@ -17,6 +17,7 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "@react-icons/all-files": "^4.1.0",
     "babel-plugin-styled-components": "^2.0.7",
     "bulma": "^0.9.4",
     "gatsby": "^4.19.0",
@@ -27,8 +28,10 @@
     "gatsby-source-filesystem": "^4.19.0",
     "gatsby-transformer-sharp": "^4.19.0",
     "gatsby-transformer-yaml": "^4.19.0",
+    "js-yaml": "^4.1.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-icons": "^4.4.0",
     "styled-components": "^5.3.5"
   },
   "devDependencies": {
