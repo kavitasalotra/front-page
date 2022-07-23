@@ -39,15 +39,12 @@ export default function HomeHero() {
                 {general.description}
               </p>
             </div>
-            <div className="column is-7">
-              <Button
-                className="button is-normal is-responsive py-5 px-6 is-size-6-mobile button-is-secondary  has-text-centered m-4"
-                text="Learn more"
-              />
-              <Button
-                className="button is-normal is-responsive py-5 px-6 is-size-6-mobile button-is-primary  has-text-centered m-4"
-                text="Download"
-              />
+            <div
+              className="column is-7
+              is-inline-flex is-justify-content-center"
+            >
+              <Button secondary text="Learn more" />
+              <Button border borderColor text="Download" />
             </div>
           </div>
         </div>

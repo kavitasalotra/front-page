@@ -1,10 +1,16 @@
 import React from 'react';
 
-const Heading = ({ text, children }) => {
+const Heading = ({ text, children, color, ...props }) => {
   return (
-    <h1 className="is-title text-medium has-text-secondary has-text-weight-bold">
-      {text || children}
-    </h1>
+    <div color={color} {...props}>
+      <h1
+        className={`is-title text-medium has-text-weight-bold ${
+          color ? 'has-text-white-lite' : 'has-text-secondary'
+        } `}
+      >
+        {text || children}
+      </h1>
+    </div>
   );
 };
 

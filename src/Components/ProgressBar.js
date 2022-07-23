@@ -21,7 +21,6 @@ const Wrapper = styled.div`
     bottom: 150%;
     left: 50%;
     margin-left: -60px;
-    color: ;
   }
   .tooltip .tooltiptext::after {
     content: '';
@@ -31,7 +30,7 @@ const Wrapper = styled.div`
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: black transparent transparent transparent;
+    border-color: #f1d204 transparent transparent transparent;
   }
 `;
 
@@ -39,7 +38,6 @@ const ProgressWrapper = styled.div`
   .progress.is-primary::-moz-progress-bar {
     background-color: ${(props) => props.color};
     color: ${(props) => props.color};
-    background-color: ${(props) => props.backgroundColor};
   }
 `;
 
@@ -58,8 +56,10 @@ const ProgressBar = ({ works }) => {
                 <progress
                   className="progress is-primary "
                   value={item.value}
-                  style={{ color: item.color }}
-                />
+                  max="100"
+                >
+                  {item.value}%
+                </progress>
                 <span className="icon-text is-flex">
                   <span style={{ color: item.color }}>{item.title}</span>
                 </span>
@@ -67,6 +67,7 @@ const ProgressBar = ({ works }) => {
                   className="tooltiptext  has-text-white-lite "
                   style={{ backgroundColor: item.backgroundColor }}
                 >
+                  {' '}
                   {item.value}%
                 </span>
               </div>

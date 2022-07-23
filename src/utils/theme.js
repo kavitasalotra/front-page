@@ -109,24 +109,18 @@ const GlobalStyle = createGlobalStyle`
     color:${theme.textColorwhite}!important;
     border-color:transparent;
     min-width: 242px;
-    border: 3px solid ${theme.mainBrandColor} !important;
-    transition: all .3s;
   :hover{
       background-color:${theme.backgroundColor} !important;
-      border: 3px solid ${theme.backgroundColor}  !important;
       color:${theme.textColorwhite};
   }
   }
 .button-is-secondary{
   color:${theme.textColorwhite}!important;
   background: transparent !important;
-  border: 3px solid #fff;
   border-radius: 3px;
   min-width: 242px;
-  transition: all .3s;
   :hover{
- background-color: rgba( 0, 0, 0, .1 )important;
-  border: 3px solid #fff;
+  background-color: rgba( 0, 0, 0, .1 )important;
     color:${theme.textColorwhite}!important;
   }
 }

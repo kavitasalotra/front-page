@@ -1,5 +1,15 @@
 import React from 'react';
+import styled from 'styled-components';
 import Heading from './element/Heading';
+
+const Wrapper = styled.div`
+  img:hover {
+    opacity: 0.4;
+  }
+  .columns {
+    margin-bottom: -7px !important;
+  }
+`;
 
 const data = [
   {
@@ -22,15 +32,17 @@ const data = [
 
 export default function Project() {
   return (
-    <section className="section has-text-centered has-background-grey-lighter px-0 pb-0">
-      <div className="columns is-multiline is-centered ">
-        <div className="column is-10">
-          <Heading text="Projects" />
-          <h2 className="has-text-grey-lite is-size-6 has-text-weight-normal mt-0">
-            you will love our work. Check it out!
-          </h2>
+    <Wrapper>
+      <section className="section has-text-centered has-background-grey-lighter px-0">
+        <div className="columns is-multiline is-centered ">
+          <div className="column is-10">
+            <Heading text="Projects" />
+            <h2 className="has-text-grey-lite is-size-6 has-text-weight-normal mt-0">
+              you will love our work. Check it out!
+            </h2>
+          </div>
         </div>
-      </div>
+      </section>
       <div className="columns is-gapless">
         {' '}
         {data.map((item) => (
@@ -39,6 +51,6 @@ export default function Project() {
           </div>
         ))}
       </div>
-    </section>
+    </Wrapper>
   );
 }
