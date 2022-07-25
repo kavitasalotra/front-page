@@ -26,7 +26,7 @@ export const theme = {
   backgroundInputColor: lightShades,
   backgroundColorLite: mainBrandColor,
   backgroundColorLight: '#222f36',
-
+  backgroundColorBlackLite: '#292825',
   // Font sizes
   fontSizeBase: '20px',
   fontSizeSmall: '23px',
@@ -87,7 +87,9 @@ const GlobalStyle = createGlobalStyle`
     .has-background-purple{
     background-color:${theme.backgroundColor} !important;
     }
-
+    .has-background-blackLite{
+    background-color: ${theme.backgroundColorBlackLite} !important;
+    }
   .text-base{
     font-size: ${theme.fontSizeBase};
   }

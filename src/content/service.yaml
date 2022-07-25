@@ -1,2 +1,20 @@
-title: 'service'
-subtitle: 'You'll love our work. Check it out!'
+title: 'Services'
+description: 'In order to help you grow your business, our carefully selected experts can advise you in in the following areas:'
+services:
+  - id: 1
+    icon: ✎
+    title: 'Web Design'
+    color: '#F18B6D'
+    description: 'Web designers plan, create and code internet sites and web pages. A web designer is responsible for creating the design and layout of a website or web pages. '
+
+  - id: 1
+    icon: </>
+    title: 'WEB DEVELOPMENT'
+    color: '#f1d204'
+    description: 'Web development  follow standard methods developing Web sites.A Web Developer is a professional who is responsible for the design and construction of websites'
+
+  - id: 1
+    icon: 🔍
+    title: 'SEO Analisys'
+    color: '#6a4d8a'
+    description: 'The SEO analysts responsibilities include analyzing and identifying gaps in website content, optimizing pages for improved search results, building links.'

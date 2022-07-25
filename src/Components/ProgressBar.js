@@ -5,6 +5,9 @@ const Wrapper = styled.div`
   .progress {
     height: 4px;
   }
+`;
+
+const ProgressWrapper = styled.div`
   .tooltip {
     position: relative;
     display: inline-block;
@@ -19,7 +22,7 @@ const Wrapper = styled.div`
     position: absolute;
     z-index: 1;
     bottom: 150%;
-    left: 50%;
+    left: ${(props) => props.positionLeft};
     margin-left: -60px;
   }
   .tooltip .tooltiptext::after {
@@ -30,11 +33,8 @@ const Wrapper = styled.div`
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: #f1d204 transparent transparent transparent;
+    border-color: ${(props) => props.color} transparent transparent transparent;
   }
-`;
-
-const ProgressWrapper = styled.div`
   .progress.is-primary::-moz-progress-bar {
     background-color: ${(props) => props.color};
     color: ${(props) => props.color};
@@ -51,6 +51,7 @@ const ProgressBar = ({ works }) => {
               key={item.id}
               className="column is-4 has-text-lite"
               color={item.color}
+              positionLeft={`${item.value}%`}
             >
               <div className="tooltip">
                 <progress

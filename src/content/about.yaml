@@ -12,6 +12,7 @@ works:
     color: '#f1d204'
     value: 82
     backgroundColor: '#f1d204'
+
   - id: 1
     title: ' </> Development'
     color: '#6a4d8a'

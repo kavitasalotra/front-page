@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Heading from './element/Heading';
-// import TestimonialItem from './ TestimonialItems';
+import TestimonialItem from './ TestimonialItems';
 
 const Wrapper = styled.div`
   .has-background-image {
@@ -21,7 +21,7 @@ export default function Testimonial() {
             <Heading color text="Testimonial" />
           </div>
         </div>
-        {/* <TestimonialItem /> */}
+        <TestimonialItem />
       </section>
     </Wrapper>
   );

@@ -9,14 +9,9 @@ export default function About() {
       <div className="container">
         <div className="columns is-multiline is-centered">
           <div className="column is-10">
-            <Heading text="About" />
+            <Heading text={about.title} />
             <h2 className="has-text-grey-lite is-size-6 has-text-weight-normal mt-5">
-              It is an amazing one-page theme with great features that offers an
-              incredible experience. It is easy to install, make changes, adapt
-              for your business. A modern design with clean lines and styling
-              for a wide variety of content, exactly how a business design
-              should be. You can add as many images as you want to the main
-              header area and turn them into slider.
+              {about.Description}
             </h2>
           </div>
         </div>

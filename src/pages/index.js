@@ -4,6 +4,7 @@ import HomeHero from '../Components/HomeHero';
 import About from '../Components/About';
 import Project from '../Components/Projects';
 import Testimonial from '../Components/Testimonials';
+import Service from '../Components/Service';
 
 const IndexPage = () => {
   return (
@@ -12,6 +13,7 @@ const IndexPage = () => {
       <About />
       <Project />
       <Testimonial />
+      <Service />
     </Layout>
   );
 };
