@@ -39,10 +39,7 @@ export default function HomeHero() {
                 {general.description}
               </p>
             </div>
-            <div
-              className="column is-7
-              is-inline-flex is-justify-content-center"
-            >
+            <div className="column is-7">
               <Button secondary text="Learn more" />
               <Button border borderColor text="Download" />
             </div>

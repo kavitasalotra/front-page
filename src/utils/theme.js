@@ -61,7 +61,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${theme.textColorGreyLite};
   }
   .has-text-white{
-    color:${theme.textColorwhite};
+    color:${theme.textColorWhite};
   }
   .has-text-white-lite{
     color:${theme.textColorwhitelite};

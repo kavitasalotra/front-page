@@ -5,6 +5,7 @@ import About from '../Components/About';
 import Project from '../Components/Projects';
 import Testimonial from '../Components/Testimonials';
 import Service from '../Components/Service';
+import NewsItems from '../Components/NewsItems';
 
 const IndexPage = () => {
   return (
@@ -14,6 +15,7 @@ const IndexPage = () => {
       <Project />
       <Testimonial />
       <Service />
+      <NewsItems />
     </Layout>
   );
 };
