@@ -63,7 +63,7 @@ export default function Header() {
                   Services
                 </Link>
                 <Link
-                  to=" "
+                  to="/blog"
                   class="navbar-item has-text-white  ml-4 is-hovered"
                 >
                   Blog

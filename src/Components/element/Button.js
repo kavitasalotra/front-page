@@ -32,6 +32,7 @@ const Button = ({
         className={`button is-normal is-responsive py-5 px-6 is-size-6-mobile has-text-centered m-4 ${
           secondary ? 'button-is-secondary' : 'button-is-primary'
         } `}
+        style={{ width: `${props.width}` }}
         {...props}
       >
         {text || children}

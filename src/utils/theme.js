@@ -69,6 +69,9 @@ const GlobalStyle = createGlobalStyle`
   .has-text-secondary{
     color:${theme.textColorSecondary};
   }
+    .is-text-primary{
+    color:${theme.textColorPrimary};
+  }
   .has-text-color{
     color:${theme.textColor}!important;
   }
@@ -78,7 +81,7 @@ const GlobalStyle = createGlobalStyle`
   .has-text-purple {
     color: ${theme.textColorpuple}!important;
   }
-  .has-background-light{
+  .has-background-color{
     background-color:${theme.backgroundColorLight} !important;
     }
     .has-background-lite{
@@ -110,7 +113,6 @@ const GlobalStyle = createGlobalStyle`
     background-color:${theme.mainBrandColor} !important;
     color:${theme.textColorwhite}!important;
     border-color:transparent;
-    min-width: 242px;
   :hover{
       background-color:${theme.backgroundColor} !important;
       color:${theme.textColorwhite};
@@ -120,7 +122,8 @@ const GlobalStyle = createGlobalStyle`
   color:${theme.textColorwhite}!important;
   background: transparent !important;
   border-radius: 3px;
-  min-width: 242px;
+
+
   :hover{
   background-color: rgba( 0, 0, 0, .1 )important;
     color:${theme.textColorwhite}!important;

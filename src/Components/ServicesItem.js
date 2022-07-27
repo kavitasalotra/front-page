@@ -17,7 +17,7 @@ export default function ServicesItem({ services }) {
           >
             <span className="is-size-2 has-text-weight-bold">{item.icon}</span>
             <h2
-              className="text-small has-text-weight-bold"
+              className="text-small is-title has-text-weight-bold"
               style={{ color: item.color }}
             >
               {item.title}

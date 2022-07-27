@@ -1,21 +1,34 @@
 title: 'Testimonial'
-info:
+reviews:
   - id: 1
-    image: 'images/Testimonial.jpg'
-    description: 'gkuhkl'
-    authorName: 'yughuh'
+    image: 'images/Testimonial-1.jpg'
+    description: 'Awesome theme with great design and awesome support.
+      If you don’t know how to code your own WordPress
+      theme, but you still want a good-looking website for
+      your business, Illdy might be exactly what you need.
+      It is a slick theme with a lot of of features to
+      choose from.  but you still want a good-looking website for
+      your business, Illdy might be exactly what you need.'
+    user: 'Mike Muller'
 
   - id: 2
-    image: 'images/Testimonial.jpg'
-    description: 'gkuhkl'
-    authorName: 'yughuh'
+    image: 'images/Testimonial-2.jpg'
+    description: 'Awesome theme with great design and awesome support.
+      If you don’t know how to code your own WordPress
+      theme, but you still want a good-looking website for
+      your business, Illdy might be exactly what you need.
+      It is a slick theme with a lot of of features to
+      choose from.Illdy might be exactly what you need.
+      It is a slick theme with a lot of of features to
+      choose from'
+    authorName: 'John Doe'
 
   - id: 3
-    image: 'images/Testimonial.jpg'
-    description: 'gkuhkl'
-    authorName: 'yughuh'
+    image: 'images/Testimonial-3.jpg'
+    description: 'Awesome theme with great design and awesome support. If you don’t know how to code your own WordPress theme, but you still want a good-looking website for your business, Illdy might be exactly what you need. It is a slick theme with a lot of of features to choose from. You can customize whatever section you want  no matter what device your website is viewed on – it looks great.'
+    user: 'Aigars Silkalns'
 
   - id: 3
-    image: 'images/Testimonial.jpg'
-    description: 'gkuhkl'
-    authorName: 'yughuh'
+    image: 'images/Testimonial-4.jpg'
+    description: 'Awesome theme with great design and helpful support. If you don’t know how to code your own WordPress theme, but you still want a good-looking website for your business, Illdy might be exactly what you need. It is a slick theme with a lot of of features to choose from. You can customize whatever section you want and   no matter what device your website is viewed on – it looks great.'
+    user: 'Jane Smith'

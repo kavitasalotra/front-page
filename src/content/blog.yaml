@@ -1,2 +1,17 @@
-title: 'blog'
-subtitle: 'You'll love our work. Check it out!'
+title: 'Latest News'
+subtitle: 'If you are interested in the latest articles in the industry, take a sneak peek at our blog. You have nothing to loose!'
+posts:
+  - id: 1
+    image: 'images/photo-1.jpg'
+    title: 'We Have Made Illdy Theme SEO Friendly'
+    description: 'Illdy One Page WordPress theme is fully SEO friendly and is ready to help you to achieve the highest rankings… '
+
+  - id: 1
+    image: 'images/photo-2.jpg'
+    title: 'We Have Made Illdy Theme SEO Friendly'
+    description: 'Illdy One Page WordPress theme is fully SEO friendly and is ready to help you to achieve the highest rankings… '
+
+  - id: 1
+    image: 'images/photo-3.jpg'
+    title: 'We Have Made Illdy Theme SEO Friendly'
+    description: 'Illdy One Page WordPress theme is fully SEO friendly and is ready to help you to achieve the highest rankings… '
