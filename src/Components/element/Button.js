@@ -7,12 +7,12 @@ const Section = styled.div`
       ${(props) =>
         props.border
           ? props.theme.mainBrandColor
-          : props.theme.textColorwhitelite} !important;
+          : props.theme.textColorWhiteLite} !important;
     :hover {
       border-color: ${(props) =>
         props.borderColor
           ? props.theme.backgroundColor
-          : props.theme.textColorwhitelite} !important;
+          : props.theme.textColorWhiteLite} !important;
     }
   }
 `;
@@ -23,15 +23,16 @@ const Button = ({
   border,
   borderColor,
   secondary,
+  padding,
   ...props
 }) => {
   return (
     <Section border={border} borderColor={borderColor}>
       <button
         type="button"
-        className={`button is-normal is-responsive py-5 px-6 is-size-6-mobile has-text-centered m-4 ${
+        className={`button is-normal has-text-white-lite is-responsive is-size-6-mobile has-text-centered m-4 ${
           secondary ? 'button-is-secondary' : 'button-is-primary'
-        } `}
+        }  ${padding ? ' py-5 px-6' : 'px-6 py-0 '}`}
         style={{ width: `${props.width}` }}
         {...props}
       >

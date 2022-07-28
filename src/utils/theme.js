@@ -37,12 +37,12 @@ export const theme = {
   // Text colors
   textColor: mainBrandColor,
   textColorGreyLite: darkAccent,
-  textColorwhite: lightShades,
+  textColorWhite: lightShades,
   textColorLite: '#F18B6D',
   textColorPrimary: '#5e5e5e',
   textColorSecondary: darkShades,
-  textColorwhitelite: '#fff',
-  textColorpuple: lightCreamAccent,
+  textColorWhiteLite: '#fff',
+  textColorPurple: lightCreamAccent,
 
   // FONTS FAMILY
   primaryFontFamily: "'Lato', sans-serif",
@@ -64,7 +64,7 @@ const GlobalStyle = createGlobalStyle`
     color:${theme.textColorWhite};
   }
   .has-text-white-lite{
-    color:${theme.textColorwhitelite};
+    color:${theme.textColorWhiteLite};
   }
   .has-text-secondary{
     color:${theme.textColorSecondary};
@@ -79,7 +79,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${theme.textColorLite}!important;
   }
   .has-text-purple {
-    color: ${theme.textColorpuple}!important;
+    color: ${theme.textColorPurple}!important;
   }
   .has-background-color{
     background-color:${theme.backgroundColorLight} !important;
@@ -94,7 +94,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${theme.backgroundColorBlackLite} !important;
     }
   .text-base{
-    font-size: ${theme.fontSizeBase};
+    font-size: ${theme.fontSizeBase} !important;
   }
   .text-small {
     font-size: ${theme.fontSizeSmall};

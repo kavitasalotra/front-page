@@ -40,8 +40,14 @@ export default function HomeHero() {
               </p>
             </div>
             <div className="column is-7">
-              <Button secondary width="242px" text="Learn more" />
-              <Button border borderColor width="242px" text="Download" />
+              <Button secondary padding width="242px" text="Learn more" />
+              <Button
+                border
+                padding
+                borderColor
+                width="242px"
+                text="Download"
+              />
             </div>
           </div>
         </div>

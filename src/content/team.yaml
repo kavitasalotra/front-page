@@ -1,0 +1,23 @@
+title: 'Team'
+description: 'Meet the people that are going to take your business to the next level.'
+teamInfo:
+  - id: 1
+    image: 'images/front-page-team-1.jpg'
+    teamMemberName: 'Mark Lawrance'
+    post: 'Web Designer'
+    features: 'Creative, detail-oriented, always focused.'
+    color: '#F18B6D'
+
+  - id: 2
+    image: 'images/front-page-team-2.jpg'
+    teamMemberName: 'Jane Stenton'
+    post: 'SEO Specialist'
+    features: 'Curious, tech-geeck and gets serious when it comes to work.'
+    color: '#f1d204'
+
+  - id: 3
+    image: 'images/Testimonial-1.jpg'
+    teamMemberName: 'John Smith'
+    post: 'Developer'
+    features: 'Enthusiastic, passionate with great sense of humor.'
+    color: '#6a4d8a'

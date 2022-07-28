@@ -1,0 +1,9 @@
+title: 'Contact Us'
+residence:
+  - id: 1
+    address: 'Address'
+    location: 'Street 221B Baker Street, London, UK '
+
+  - id: 2
+    address: 'Customer Support'
+    location: ' E-mail: contact@site.com Phone: (555) 555-5555  '
