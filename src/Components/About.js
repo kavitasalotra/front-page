@@ -1,11 +1,11 @@
 import React from 'react';
-import about from '../content/about.yaml';
+import about from '../content/general/about.yaml';
 import Heading from './element/Heading';
 import ProgressBar from './ProgressBar';
 
 export default function About() {
   return (
-    <section className="section is-medium has-text-centered">
+    <section id="about" className="section is-medium has-text-centered">
       <div className="container">
         <div className="columns is-multiline is-centered">
           <div className="column is-10">

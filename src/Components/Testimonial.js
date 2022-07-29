@@ -4,7 +4,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Heading from './element/Heading';
-import testimonial from '../content/testimonial.yaml';
+import testimonial from '../content/general/testimonial.yaml';
 
 const Wrapper = styled.div`
   .has-background-image {
@@ -71,7 +71,7 @@ export default function Testimonial() {
     ],
   };
   return (
-    <Wrapper>
+    <Wrapper id="testimonial">
       <section className="section has-text-centered  has-background-image">
         <div className="has-text-centered  mb-6">
           <Heading color text={testimonial.title} />
@@ -93,12 +93,12 @@ export default function Testimonial() {
                         </figure>
                       </div>
                       <div className="has-text-white">
-                        <div className=" tooltip   has-background-purple has-text-white">
+                        <div className=" tooltip has-background-purple has-text-white">
                           {item.description}
                         </div>
                       </div>
                       <div className="mt-3 has-text-white ">
-                        <span className="text-base has-text-weight-bold">
+                        <span className="text-base is-title has-text-weight-bold">
                           {item.user}
                         </span>
                       </div>

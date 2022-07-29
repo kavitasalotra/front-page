@@ -14,12 +14,12 @@ const Section = styled.div`
 export default function BlogItem({ post }) {
   return (
     <Section>
-      <div className="columns is-centered">
+      <div className="columns is-centered pt-6">
         {post.map((item) => (
-          <div className="column is-4 m-3">
+          <div className="column is-4 m-1">
             <div className="card is-shadowless has-text-left">
               <div className="card-image">
-                <figure className="image is-4by3">
+                <figure className="image is-3by2">
                   <img src={item.image} alt="Placeholder" />
                 </figure>
               </div>

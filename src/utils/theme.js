@@ -53,6 +53,7 @@ const GlobalStyle = createGlobalStyle`
   body{
     font-family: ${theme.primaryFontFamily} !important;
     line-height: 26px;
+      scroll-behavior: smooth;
   }
   .is-title{
     font-family: ${theme.SecondaryFontFamily}  !important;
@@ -70,7 +71,7 @@ const GlobalStyle = createGlobalStyle`
     color:${theme.textColorSecondary};
   }
     .is-text-primary{
-    color:${theme.textColorPrimary};
+    color:${theme.textColorPrimary}!important;
   }
   .has-text-color{
     color:${theme.textColor}!important;
@@ -115,20 +116,26 @@ const GlobalStyle = createGlobalStyle`
     border-color:transparent;
   :hover{
       background-color:${theme.backgroundColor} !important;
-      color:${theme.textColorwhite};
+      color:${theme.textColorWhite};
+
   }
   }
 .button-is-secondary{
-  color:${theme.textColorwhite}!important;
+  color:${theme.textColorWhite}!important;
   background: transparent !important;
   border-radius: 3px;
-
-
   :hover{
   background-color: rgba( 0, 0, 0, .1 )important;
-    color:${theme.textColorwhite}!important;
+  color:${theme.textColorWhite}!important;
   }
 }
+  .button:active
+  {
+    color:${theme.textColorWhite}!important;
+    }
+  .button:focus{
+    color:${theme.textColorWhite}!important;
+  }
 
 `;
 export default GlobalStyle;

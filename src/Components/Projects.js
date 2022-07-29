@@ -9,6 +9,9 @@ const Wrapper = styled.div`
   .columns {
     margin-bottom: -7px !important;
   }
+  section {
+    background-image: url(https://colorlibhub.com/illdy/wp-content/themes/illdy/layout/images/front-page/pattern.png) !important;
+  }
 `;
 
 const data = [
@@ -33,7 +36,7 @@ const data = [
 export default function Project() {
   return (
     <Wrapper>
-      <section className="section has-text-centered has-background-grey-lighter px-0">
+      <section className="section has-text-centered px-0">
         <div className="columns is-multiline is-centered ">
           <div className="column is-10">
             <Heading text="Projects" />

@@ -15,7 +15,7 @@ const ProgressWrapper = styled.div`
   }
 
   .tooltip .tooltiptext {
-    width: 120px;
+    width: 60px;
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
@@ -51,7 +51,7 @@ const ProgressBar = ({ works }) => {
               key={item.id}
               className="column is-4 has-text-lite"
               color={item.color}
-              positionLeft={`${item.value}%`}
+              positionLeft={`${item.value + 9}%`}
             >
               <div className="tooltip">
                 <progress

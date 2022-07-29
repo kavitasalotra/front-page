@@ -25,13 +25,16 @@ const Wrapper = styled.div`
   background-repeat: no-repeat;
   .lineDivider {
     border-right: 1px solid #e1e1e1;
+    :last-child {
+      border-right: 0px solid #e1e1e1;
+    }
   }
 `;
 
 export default function Counter() {
   return (
     <Wrapper>
-      <section className="section is-medium has-text-centered">
+      <section className="section  has-text-centered">
         <div className="columns">
           {data.map((item) => (
             <div className="column is-4 lineDivider">

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Header from './Header';
 import { theme } from '../utils/theme';
 import Button from './element/Button';
-import general from '../content/general.yaml';
+import general from '../content/general/general.yaml';
 
 const Wrapper = styled.div`
   .has-background-image {
@@ -39,7 +39,7 @@ export default function HomeHero() {
                 {general.description}
               </p>
             </div>
-            <div className="column is-7">
+            <div className="column is-7 is-flex is-justify-content-center">
               <Button secondary padding width="242px" text="Learn more" />
               <Button
                 border

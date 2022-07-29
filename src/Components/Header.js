@@ -1,24 +1,33 @@
 import { Link } from 'gatsby';
 import * as React from 'react';
 import styled from 'styled-components';
-import { theme } from '../utils/theme';
 
 const Wrapper = styled.div`
+  .navbar {
+    background: ${(props) =>
+      props.background ? props.theme.mainBrandColor : props.theme.none};
+  }
+
   .navbar-item img {
     max-height: 5rem;
   }
   .is-hovered:hover {
-    color: ${theme.textColor}!important;
+    color: ${(props) => props.theme.textColor}!important;
     background-color: transparent !important;
+  }
+  .navbar-item:focus,
+  .navbar-item:focus-within {
+    background-color: transparent;
+    color: ${(props) => props.theme.textColorWhiteLite}!important;
   }
 `;
 
-export default function Header() {
+export default function Header({ background }) {
   return (
-    <Wrapper>
-      <div className="container py-2">
-        <nav className="navbar " role="navigation" aria-label="main navigation">
-          <div className="navbar-brand">
+    <Wrapper background={background}>
+      <nav className="navbar" role="navigation" aria-label="main navigation">
+        <div className="container">
+          <div className="navbar-brand ">
             <a className="navbar-item" href="/">
               <img src="images/cropped-logo-1.png" alt="logo" />
             </a>
@@ -42,49 +51,52 @@ export default function Header() {
             <div className="navbar-end ">
               <div className="navbar-item  is-size-6 has-text-weight-bold">
                 <Link
-                  to=" /"
-                  class="navbar-item has-text-white ml-4 is-hovered"
+                  to="/#about"
+                  className="navbar-item ml-4 is-hovered  has-text-white-lite"
                 >
                   About
                 </Link>
                 <Link
-                  to="/blog"
-                  class="navbar-item has-text-white ml-4 is-hovered"
+                  to="/ "
+                  className="navbar-item ml-4 is-hovered  has-text-white-lite"
                 >
                   Portfolio
                 </Link>
-                <Link to=" " class="navbar-item has-text-white ml-4 is-hovered">
+                <Link
+                  to="/#testimonial"
+                  className="navbar-item  ml-4 is-hovered  has-text-white-lite"
+                >
                   Testimonials
                 </Link>
                 <Link
-                  to=" "
-                  class="navbar-item has-text-white  ml-4 is-hovered"
+                  to="/#service"
+                  className="navbar-item   ml-4 is-hovered  has-text-white-lite"
                 >
                   Services
                 </Link>
                 <Link
-                  to="/blog"
-                  class="navbar-item has-text-white  ml-4 is-hovered"
+                  to="/blogs"
+                  className="navbar-item  ml-4 is-hovered  has-text-white-lite"
                 >
                   Blog
                 </Link>
                 <Link
-                  to=" "
-                  class="navbar-item has-text-white  ml-4 is-hovered"
+                  to="/#team"
+                  className="navbar-item   ml-4 is-hovered  has-text-white-lite"
                 >
                   Our Team
                 </Link>
                 <Link
-                  to=" "
-                  class="navbar-item has-text-white  ml-4 is-hovered"
+                  to="/contact "
+                  className="navbar-item ml-4 is-hovered  has-text-white-lite"
                 >
                   Contact Us
                 </Link>
               </div>
             </div>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </Wrapper>
   );
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { RiFacebookFill } from 'react-icons/ri';
 import { FaTwitter, FaLinkedinIn } from 'react-icons/fa';
-import contact from '../content/contact.yaml';
+import contact from '../content/general/contact.yaml';
 import Heading from './element/Heading';
 import ContactForm from './ContactForm';
 
