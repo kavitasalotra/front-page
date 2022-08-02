@@ -27,7 +27,7 @@ const Wrapper = styled.div`
     content: '';
     position: absolute;
     bottom: -20px;
-    right: 50%;
+    right: 46%;
     border-width: 20px 20px 0;
     border-style: solid;
     border-color: #6a4d8a transparent;
@@ -93,7 +93,7 @@ export default function Testimonial() {
                         </figure>
                       </div>
                       <div className="has-text-white">
-                        <div className=" tooltip has-background-purple has-text-white">
+                        <div className=" tooltip has-background-purple is-size-6 has-text-white">
                           {item.description}
                         </div>
                       </div>

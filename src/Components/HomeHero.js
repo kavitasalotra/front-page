@@ -15,6 +15,7 @@ const Wrapper = styled.div`
   .dot {
     vertical-align: sub;
     color: ${theme.backgroundColorLite} !important;
+    font-size: 3.3rem;
   }
 `;
 
@@ -39,7 +40,7 @@ export default function HomeHero() {
                 {general.description}
               </p>
             </div>
-            <div className="column is-7 is-flex is-justify-content-center">
+            <div className="column is-7 is-flex is-justify-content-center is-flex-wrap-wrap">
               <Button secondary padding width="242px" text="Learn more" />
               <Button
                 border

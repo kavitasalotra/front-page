@@ -18,10 +18,10 @@ const BlogPost = ({ data }) => {
       >
         <Header />
         <div className="hero-body">
-          <div className="has-text-centered">
-            <p className="is-title has-text-white has-text-weight-bold is-size-1 is-size-2-mobile">
+          <div className="has-text-centered ">
+            <h1 className="is-title is-line-height has-text-white has-text-weight-bold is-size-1 is-size-2-mobile">
               {post?.frontmatter?.title}
-            </p>
+            </h1>
           </div>
         </div>
       </section>

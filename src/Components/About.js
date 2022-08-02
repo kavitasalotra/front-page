@@ -10,8 +10,8 @@ export default function About() {
         <div className="columns is-multiline is-centered">
           <div className="column is-10">
             <Heading text={about.title} />
-            <h2 className="has-text-grey-lite is-size-6 has-text-weight-normal mt-5">
-              {about.Description}
+            <h2 className="has-text-grey-lite is-size-6 has-text-weight-normal mt-5 mb-4">
+              {about.description}
             </h2>
           </div>
         </div>

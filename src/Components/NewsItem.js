@@ -9,6 +9,9 @@ const Section = styled.div`
   .text-small:hover {
     color: ${(props) => props.theme.textColor}!important;
   }
+  .card {
+    border-radius: 0px transparent;
+  }
 `;
 
 export default function BlogItem({ post }) {

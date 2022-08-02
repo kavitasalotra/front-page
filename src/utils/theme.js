@@ -53,7 +53,10 @@ const GlobalStyle = createGlobalStyle`
   body{
     font-family: ${theme.primaryFontFamily} !important;
     line-height: 26px;
-      scroll-behavior: smooth;
+    scroll-behavior: smooth;
+  }
+  .is-line-height{
+      line-height: 37px !important;
   }
   .is-title{
     font-family: ${theme.SecondaryFontFamily}  !important;
@@ -116,7 +119,7 @@ const GlobalStyle = createGlobalStyle`
     border-color:transparent;
   :hover{
       background-color:${theme.backgroundColor} !important;
-      color:${theme.textColorWhite};
+      color:${theme.textColorWhite}  !important;
 
   }
   }

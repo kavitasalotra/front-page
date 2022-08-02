@@ -3,7 +3,7 @@ import { IoIosArrowDroprightCircle } from 'react-icons/io';
 import Heading from './element/Heading';
 import Button from './element/Button';
 import blog from '../content/general/blog.yaml';
-import BlogItem from './BlogItem';
+import NewsItem from './NewsItem';
 
 export default function NewsItems() {
   return (
@@ -17,12 +17,12 @@ export default function NewsItems() {
           <span>
             <Button border borderColor width="130px">
               <span>
-                <IoIosArrowDroprightCircle className="mr-2" /> ee blog
+                <IoIosArrowDroprightCircle className="mr-2" /> See blog
               </span>
             </Button>
           </span>
         </div>
-        <BlogItem post={blog.post} />
+        <NewsItem post={blog.post} />
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   .navbar {
     background: ${(props) =>
-      props.background ? props.theme.mainBrandColor : props.theme.none};
+      props.background ? props.theme.backgroundColor : props.theme.none};
   }
 
   .navbar-item img {
@@ -49,7 +49,7 @@ export default function Header({ background }) {
             className="navbar-menu is-justify-content-flex-end"
           >
             <div className="navbar-end ">
-              <div className="navbar-item  is-size-6 has-text-weight-bold">
+              <div className="navbar-item  has-text-white-lite is-size-6 has-text-weight-bold">
                 <Link
                   to="/#about"
                   className="navbar-item ml-4 is-hovered  has-text-white-lite"

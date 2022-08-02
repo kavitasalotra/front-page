@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Heading from './element/Heading';
+import project from '../content/general/project.yaml';
 
 const Wrapper = styled.div`
   img:hover {
@@ -14,41 +15,22 @@ const Wrapper = styled.div`
   }
 `;
 
-const data = [
-  {
-    id: 1,
-    image: 'images/front-page-project-1.jpg',
-  },
-  {
-    id: 2,
-    image: 'images/front-page-project-2.jpg',
-  },
-  {
-    id: 3,
-    image: 'images/front-page-project-3.jpg',
-  },
-  {
-    id: 4,
-    image: 'images/front-page-project-4.jpg',
-  },
-];
-
 export default function Project() {
   return (
     <Wrapper>
       <section className="section has-text-centered px-0">
         <div className="columns is-multiline is-centered ">
           <div className="column is-10">
-            <Heading text="Projects" />
-            <h2 className="has-text-grey-lite is-size-6 has-text-weight-normal mt-0">
-              you will love our work. Check it out!
+            <Heading text={project.title} />
+            <h2 className="has-text-grey-lite is-size-6 has-text-weight-normal mt-2">
+              {project.subTitle}
             </h2>
           </div>
         </div>
       </section>
       <div className="columns is-gapless">
         {' '}
-        {data.map((item) => (
+        {project?.projects?.map((item) => (
           <div className="column is-3">
             <img src={item.image} alt="projects" />
           </div>

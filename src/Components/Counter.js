@@ -35,7 +35,7 @@ export default function Counter() {
   return (
     <Wrapper>
       <section className="section  has-text-centered">
-        <div className="columns">
+        <div className="columns  is-flex-wrap-wrap">
           {data.map((item) => (
             <div className="column is-4 lineDivider">
               <span className="is-title has-text-white-lite text-large has-text-weight-bold">

@@ -1,16 +1,14 @@
 title: 'projects'
-subtitle: 'You'll love our work. Check it out!'
-works:
+subTitle: 'You will love our work. Check it out!'
+projects:
   - id: 1
-    title: 'franc'
-    color: '#876889'
-    value: 60
-  - id: 1
-    title: 'franc 2'
-    color: '#358875'
-    value: 82
+    image: 'images/front-page-project-1.jpg'
 
-  - id: 1
-    title: 'franc22'
-    color: '#168907'
-    value: 86
+  - id: 2
+    image: 'images/front-page-project-2.jpg'
+
+  - id: 3
+    image: 'images/front-page-project-3.jpg'
+
+  - id: 4
+    image: 'images/front-page-project-4.jpg'

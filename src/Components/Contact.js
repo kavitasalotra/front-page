@@ -22,41 +22,40 @@ export default function Contact() {
             <div className="column is-4 has-text-left is-flex">
               <div className="has-text-color box is-shadowless is-size-6 pr-4  py-2">
                 {' '}
-                {item.address}
+                {item.detail}
               </div>
               <p className="has-text-grey-lite  box is-shadowless is-size-6 has-text-weight-normal  lineDivider py-2  pl-4">
-                {item.location}
+                {item.info}
               </p>
             </div>
           ))}
-          <div className="column ">
-            <div className="is-flex is-justify-content-flex-end">
-              <div className="level-right">
-                <a
-                  href=" "
-                  className="level-item social-icons has-text-grey-lite"
-                >
-                  <FaTwitter />
-                </a>
-                <a
-                  href=" "
-                  className="level-item social-icons has-text-grey-lite"
-                >
-                  {' '}
-                  <RiFacebookFill />
-                </a>
-                <a
-                  href=" "
-                  className="level-item social-icons has-text-grey-lite"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </div>
+
+          <div className=" column is-4 is-flex is-justify-content-flex-end">
+            <div className="level-right">
+              <a
+                href=" "
+                className="level-item social-icons has-text-grey-lite"
+              >
+                <FaTwitter />
+              </a>
+              <a
+                href=" "
+                className="level-item social-icons has-text-grey-lite"
+              >
+                {' '}
+                <RiFacebookFill />
+              </a>
+              <a
+                href=" "
+                className="level-item social-icons has-text-grey-lite"
+              >
+                <FaLinkedinIn />
+              </a>
             </div>
           </div>
         </div>
-        <ContactForm />
       </div>
+      <ContactForm />
     </Wrapper>
   );
 }
