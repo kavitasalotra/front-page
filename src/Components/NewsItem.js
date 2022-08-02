@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import { IoIosArrowDroprightCircle } from 'react-icons/io';
 import styled from 'styled-components';
 
@@ -11,6 +12,9 @@ const Section = styled.div`
   }
   .card {
     border-radius: 0px transparent;
+  }
+  a {
+    color: ${(props) => props.theme.mainBrandColor};
   }
 `;
 
@@ -35,12 +39,9 @@ export default function BlogItem({ post }) {
                     {item.description}
                   </p>
                   <span>
-                    <a
-                      href="# "
-                      className="footer-item is-hovered has-text-color"
-                    >
+                    <Link to href="# " className="footer-item is-hovered ">
                       <IoIosArrowDroprightCircle className="mr-3" /> Read more
-                    </a>
+                    </Link>
                   </span>
                 </div>
               </div>

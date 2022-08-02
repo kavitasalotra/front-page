@@ -77,7 +77,7 @@ const GlobalStyle = createGlobalStyle`
     color:${theme.textColorPrimary}!important;
   }header
   .has-text-color{
-    color:${theme.textColor}!important;
+    color:${theme.mainBrandColor}!important;
   }
   .has-text-lite {
     color: ${theme.textColorLite}!important;

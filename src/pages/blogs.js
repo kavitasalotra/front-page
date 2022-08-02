@@ -8,8 +8,11 @@ import blog from '../content/general/blog.yaml';
 import Header from '../Components/Header';
 
 const Section = styled.div`
-  .is-hovered:hover {
-    color: ${(props) => props.theme.textColorPurple}!important;
+  .is-hovered {
+    color: ${(props) => props.theme.mainBrandColor};
+    :hover {
+      color: ${(props) => props.theme.textColorPurple}!important;
+    }
   }
   .text-small:hover {
     color: ${(props) => props.theme.textColor}!important;
@@ -74,7 +77,7 @@ export default function service({ data }) {
                         <span>
                           <a
                             href={`/${node.slug}`}
-                            className="footer-item is-hovered has-text-color"
+                            className="footer-item is-hovered "
                           >
                             <IoIosArrowDroprightCircle className="mr-3" /> Read
                             more
