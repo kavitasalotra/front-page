@@ -127,7 +127,7 @@ const GlobalStyle = createGlobalStyle`
   background: transparent !important;
   border-radius: 3px;
   :hover{
-  background-color: rgba(0, 0, 0, .1 )important;
+  backgrounds: rgba(0,0,0,.1)important;
   color:${theme.textColorWhite}!important;
   }
 }

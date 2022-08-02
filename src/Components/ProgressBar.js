@@ -45,11 +45,11 @@ const ProgressBar = ({ works }) => {
   return (
     <Wrapper>
       <section className="section">
-        <div className="columns">
+        <div className="columns ">
           {works.map((item) => (
             <ProgressWrapper
               key={item.id}
-              className="column is-4 has-text-lite"
+              className="column is-4 has-text-lite my-6"
               color={item.color}
               positionLeft={`${item.value + 9}%`}
             >

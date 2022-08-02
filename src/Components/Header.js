@@ -58,7 +58,7 @@ export default function Header({ background }) {
               active && 'is-active'
             }`}
           >
-            <div className="navbar-end ">
+            <div className="navbar-end  ">
               <div className="navbar-item  is-size-6 has-text-weight-bold">
                 <Link to="/#about" className="navbar-item ml-4 is-hovered">
                   About

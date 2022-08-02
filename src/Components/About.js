@@ -5,7 +5,7 @@ import ProgressBar from './ProgressBar';
 
 export default function About() {
   return (
-    <section id="about" className="section is-medium has-text-centered">
+    <section id="about" className="section has-text-centered">
       <div className="container">
         <div className="columns is-multiline is-centered">
           <div className="column is-10">
