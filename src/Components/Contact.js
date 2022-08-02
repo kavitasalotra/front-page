@@ -20,7 +20,7 @@ export default function Contact() {
         <div className="columns section px-0 pt-6 mt-3">
           {contact?.residence?.map((item) => (
             <div className="column is-4 has-text-left is-flex">
-              <div className="has-text-color box is-shadowless is-size-6 pr-4  py-2">
+              <div className="has-text-color box is-shadowless is-size-6 has-  py-2">
                 {' '}
                 {item.detail}
               </div>

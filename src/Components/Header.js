@@ -8,7 +8,8 @@ const Wrapper = styled.div`
       props.background ? props.theme.backgroundColor : props.theme.none};
   }
   .navbar-item,
-  .navbar-link {
+  .navbar-link,
+  .navbar-burger {
     color: ${(props) => props.theme.textColorWhiteLite} !important;
   }
   .navbar-item img {
@@ -22,6 +23,11 @@ const Wrapper = styled.div`
   .navbar-item:focus-within {
     background-color: transparent;
     color: ${(props) => props.theme.textColorWhiteLite}!important;
+  }
+  @media screen and (max-width: 1023px) {
+    .navbar-menu {
+      background-color: #d9d9d9 !important;
+    }
   }
 `;
 
@@ -59,7 +65,7 @@ export default function Header({ background }) {
             }`}
           >
             <div className="navbar-end">
-              <div className="navbar-item  is-size-6 has-text-weight-bold">
+              <div className="navbar-item  is-size-6 has-text-weight-bold color">
                 <Link to="/#about" className="navbar-item ml-4 is-hovered">
                   About
                 </Link>

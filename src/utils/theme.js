@@ -75,7 +75,7 @@ const GlobalStyle = createGlobalStyle`
   }
     .is-text-primary{
     color:${theme.textColorPrimary}!important;
-  }header
+  }
   .has-text-color{
     color:${theme.mainBrandColor}!important;
   }
@@ -112,7 +112,6 @@ const GlobalStyle = createGlobalStyle`
   .has-text-XL {
   font-size: ${theme.fontSizeXL};
   }
-
   .button-is-primary{
     background-color:${theme.mainBrandColor} !important;
     color:${theme.textColorWhite}!important;
