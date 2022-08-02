@@ -30,7 +30,7 @@ const Button = ({
     <Section border={border} borderColor={borderColor}>
       <button
         type="button"
-        className={`button is-normal has-text-white-lite is-responsive is-size-6-mobile has-text-centered m-4 ${
+        className={`button is-normal has-text-white-lite is-responsive is-size-6-mobile has-text-centered has-text-weight-semibold m-4 ${
           secondary ? 'button-is-secondary' : 'button-is-primary'
         }  ${padding ? ' py-5 px-6' : 'px-6 py-0 '}`}
         style={{ width: `${props.width}` }}

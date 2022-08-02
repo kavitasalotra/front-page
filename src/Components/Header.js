@@ -1,5 +1,5 @@
 import { Link } from 'gatsby';
-import * as React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
@@ -7,7 +7,10 @@ const Wrapper = styled.div`
     background: ${(props) =>
       props.background ? props.theme.backgroundColor : props.theme.none};
   }
-
+  .navbar-item,
+  .navbar-link {
+    color: ${(props) => props.theme.textColorWhiteLite} !important;
+  }
   .navbar-item img {
     max-height: 5rem;
   }
@@ -23,18 +26,23 @@ const Wrapper = styled.div`
 `;
 
 export default function Header({ background }) {
+  const [active, setActive] = useState(false);
+  const handleToggle = () => {
+    setActive(!active);
+  };
+
   return (
     <Wrapper background={background}>
-      <nav className="navbar" role="navigation" aria-label="main navigation">
+      <nav className="navbar " role="navigation" aria-label="main navigation">
         <div className="container">
-          <div className="navbar-brand ">
+          <div className="navbar-brand  ">
             <a className="navbar-item" href="/">
               <img src="images/cropped-logo-1.png" alt="logo" />
             </a>
-            <a
-              href=" "
-              role="button"
-              className="navbar-burger"
+            <button
+              type="button"
+              onClick={handleToggle}
+              className={`navbar-burger ${active && 'is-active'}`}
               aria-label="menu"
               aria-expanded="false"
               data-target="navbarBasicExample"
@@ -42,54 +50,38 @@ export default function Header({ background }) {
               <span aria-hidden="true" />
               <span aria-hidden="true" />
               <span aria-hidden="true" />
-            </a>
+            </button>
           </div>
           <div
             id="navbarBasicExample"
-            className="navbar-menu is-justify-content-flex-end"
+            className={`navbar-menu is-justify-content-flex-end ${
+              active && 'is-active'
+            }`}
           >
             <div className="navbar-end ">
-              <div className="navbar-item  has-text-white-lite is-size-6 has-text-weight-bold">
-                <Link
-                  to="/#about"
-                  className="navbar-item ml-4 is-hovered  has-text-white-lite"
-                >
+              <div className="navbar-item  is-size-6 has-text-weight-bold">
+                <Link to="/#about" className="navbar-item ml-4 is-hovered">
                   About
                 </Link>
-                <Link
-                  to="/ "
-                  className="navbar-item ml-4 is-hovered  has-text-white-lite"
-                >
+                <Link to="/ " className="navbar-item ml-4 is-hovered">
                   Portfolio
                 </Link>
                 <Link
                   to="/#testimonial"
-                  className="navbar-item  ml-4 is-hovered  has-text-white-lite"
+                  className="navbar-item  ml-4 is-hovered"
                 >
                   Testimonials
                 </Link>
-                <Link
-                  to="/#service"
-                  className="navbar-item   ml-4 is-hovered  has-text-white-lite"
-                >
+                <Link to="/#service" className="navbar-item  ml-4 is-hovered ">
                   Services
                 </Link>
-                <Link
-                  to="/blogs"
-                  className="navbar-item  ml-4 is-hovered  has-text-white-lite"
-                >
+                <Link to="/blogs" className="navbar-item  ml-4 is-hovered ">
                   Blog
                 </Link>
-                <Link
-                  to="/#team"
-                  className="navbar-item   ml-4 is-hovered  has-text-white-lite"
-                >
+                <Link to="/#team" className="navbar-item   ml-4 is-hovered">
                   Our Team
                 </Link>
-                <Link
-                  to="/contact "
-                  className="navbar-item ml-4 is-hovered  has-text-white-lite"
-                >
+                <Link to="/contact " className="navbar-item ml-4 is-hovered">
                   Contact Us
                 </Link>
               </div>

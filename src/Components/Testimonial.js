@@ -13,7 +13,6 @@ const Wrapper = styled.div`
     background-size: cover;
     background-position: center;
   }
-  /* tooltip element with border */
   .tooltip {
     position: relative;
     padding: 15px;
@@ -22,12 +21,11 @@ const Wrapper = styled.div`
     color: #333;
     background: #fff;
   }
-  /* triangle green, first, below */
   .tooltip::before {
     content: '';
     position: absolute;
     bottom: -20px;
-    right: 46%;
+    right: 47%;
     border-width: 20px 20px 0;
     border-style: solid;
     border-color: #6a4d8a transparent;

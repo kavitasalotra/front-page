@@ -4,12 +4,12 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   .has-text-grey-lite:hover {
-    color: ${(props) => props.theme.lightCreamAccent} !important;
+    color: ${(props) => props.theme.lightCreamAccent};
   }
   .section {
     background-color: #242320;
   }
-  a:hover {
+  .text-style:hover {
     text-decoration: underline;
   }
 `;
@@ -110,13 +110,13 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="section">
+      <div className="section py-5">
         <div className="content has-text-centered">
           <span className="has-text-grey-lite">
             Theme:
             <a
               href="https://colorlibhub.com/illdy/"
-              className="has-text-grey-lite"
+              className="has-text-grey-lite text-style"
             >
               illdy
             </a>

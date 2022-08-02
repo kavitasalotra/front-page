@@ -56,7 +56,7 @@ const GlobalStyle = createGlobalStyle`
     scroll-behavior: smooth;
   }
   .is-line-height{
-      line-height: 37px !important;
+  line-height: 37px !important;
   }
   .is-title{
     font-family: ${theme.SecondaryFontFamily}  !important;
@@ -75,7 +75,7 @@ const GlobalStyle = createGlobalStyle`
   }
     .is-text-primary{
     color:${theme.textColorPrimary}!important;
-  }
+  }header
   .has-text-color{
     color:${theme.textColor}!important;
   }
@@ -115,12 +115,11 @@ const GlobalStyle = createGlobalStyle`
 
   .button-is-primary{
     background-color:${theme.mainBrandColor} !important;
-    color:${theme.textColorwhite}!important;
+    color:${theme.textColorWhite}!important;
     border-color:transparent;
   :hover{
       background-color:${theme.backgroundColor} !important;
       color:${theme.textColorWhite}  !important;
-
   }
   }
 .button-is-secondary{
@@ -128,7 +127,7 @@ const GlobalStyle = createGlobalStyle`
   background: transparent !important;
   border-radius: 3px;
   :hover{
-  background-color: rgba( 0, 0, 0, .1 )important;
+  background-color: rgba(0, 0, 0, .1 )important;
   color:${theme.textColorWhite}!important;
   }
 }
