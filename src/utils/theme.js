@@ -55,6 +55,9 @@ const GlobalStyle = createGlobalStyle`
     line-height: 26px;
     scroll-behavior: smooth;
   }
+  Link {
+  color:color:${theme.textColorWhiteLite} !important;
+  }
   .is-line-height{
   line-height: 37px !important;
   }

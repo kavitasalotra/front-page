@@ -3,7 +3,7 @@
   "editor.tabSize": 2,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "inherit",
-  "editor.lineHeight": 25,
+  "editor.lineHeight": 25s,
   "editor.letterSpacing": 0.5,
   "files.trimTrailingWhitespace": true,
   "editor.fontWeight": "400",

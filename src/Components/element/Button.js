@@ -15,6 +15,10 @@ const Section = styled.div`
           : props.theme.textColorWhiteLite} !important;
     }
   }
+  .button:hover,
+  .button.is-hovered {
+    color: ${(props) => props.theme.textColorWhiteLite} !important;
+  }
 `;
 
 const Button = ({

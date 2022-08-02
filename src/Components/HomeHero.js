@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
 import Header from './Header';
 import { theme } from '../utils/theme';
@@ -28,11 +29,11 @@ export default function HomeHero() {
         </div>
         <div className="hero-body has-text-centered">
           <div className="container columns is-multiline is-centered">
-            <p className="is-title has-text-XL has-text-white  has-text-weight-bold is-size-3-mobile">
+            <p className="is-title has-text-XL has-text-white is-line-height  has-text-weight-bold is-size-2-mobile">
               Clean
-              <span className="dot">•</span>
+              <span className="dot is-size-2-mobile">•</span>
               Slick
-              <span className="dot">•</span>
+              <span className="dot is-size-2-mobile">•</span>
               Pixel Perfect
             </p>
             <div className="column is-8">
@@ -41,14 +42,18 @@ export default function HomeHero() {
               </p>
             </div>
             <div className="column is-7 is-flex is-justify-content-center is-flex-wrap-wrap">
-              <Button secondary padding width="242px" text="Learn more" />
-              <Button
-                border
-                padding
-                borderColor
-                width="242px"
-                text="Download"
-              />
+              <Link to="/#service">
+                <Button secondary padding width="204px" text="Service" />
+              </Link>
+              <Link to="/#about">
+                <Button
+                  border
+                  padding
+                  borderColor
+                  width="204px"
+                  text="About Us"
+                />
+              </Link>
             </div>
           </div>
         </div>

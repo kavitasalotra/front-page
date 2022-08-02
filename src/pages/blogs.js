@@ -77,7 +77,7 @@ export default function service({ data }) {
                         <span>
                           <a
                             href={`/${node.slug}`}
-                            className="footer-item is-hovered "
+                            className="footer-item is-hovered  is-flex is-align-items-center "
                           >
                             <IoIosArrowDroprightCircle className="mr-3" /> Read
                             more

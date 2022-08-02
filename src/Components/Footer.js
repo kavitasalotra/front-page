@@ -27,7 +27,7 @@ export default function Footer() {
               <div className="content">
                 <ol type="none">
                   <li className="mb-4">
-                    <Link to="#Our work" className="has-text-grey-lite">
+                    <Link to="/#service" className="has-text-grey-lite">
                       ➣ Our work
                     </Link>
                   </li>
@@ -37,7 +37,7 @@ export default function Footer() {
                     </Link>
                   </li>
                   <li className="mb-4">
-                    <Link to="#News" className="has-text-grey-lite">
+                    <Link to="/blogs" className="has-text-grey-lite">
                       ➣ News
                     </Link>
                   </li>
@@ -71,7 +71,7 @@ export default function Footer() {
                     </Link>
                   </li>
                   <li className="mb-4">
-                    <Link to="#Blog" className="has-text-grey-lite">
+                    <Link to="/Blog" className="has-text-grey-lite">
                       ➣ Blog
                     </Link>
                   </li>

@@ -24,29 +24,28 @@ export default function Contact() {
                 {' '}
                 {item.detail}
               </div>
-              <p className="has-text-grey-lite  box is-shadowless is-size-6 has-text-weight-normal  lineDivider py-2  pl-4">
+              <p className="has-text-grey-lite  box is-shadowless is-size-6 lineDivider has-text-weight-normal  py-2  pl-4">
                 {item.info}
               </p>
             </div>
           ))}
-
-          <div className=" column is-4 is-flex is-justify-content-flex-end">
-            <div className="level-right">
+          <div className=" column is-4  is-flex is-justify-content-end">
+            <div className="level-right level is-mobile">
               <a
-                href=" "
-                className="level-item social-icons has-text-grey-lite"
+                href="https://twitter.com/"
+                className="level-item social-icons has-text-grey-lite "
               >
                 <FaTwitter />
               </a>
               <a
-                href=" "
+                href="https://www.facebook.com/"
                 className="level-item social-icons has-text-grey-lite"
               >
                 {' '}
                 <RiFacebookFill />
               </a>
               <a
-                href=" "
+                href="https://www.linkedin.com/"
                 className="level-item social-icons has-text-grey-lite"
               >
                 <FaLinkedinIn />

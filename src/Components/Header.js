@@ -25,8 +25,10 @@ const Wrapper = styled.div`
     color: ${(props) => props.theme.textColorWhiteLite}!important;
   }
   @media screen and (max-width: 1023px) {
-    .navbar-menu {
+    .navbar-menu,
+    .navbar-item {
       background-color: #d9d9d9 !important;
+      color: #000 !important;
     }
   }
 `;
@@ -39,10 +41,14 @@ export default function Header({ background }) {
 
   return (
     <Wrapper background={background}>
-      <nav className="navbar " role="navigation" aria-label="main navigation">
+      <nav
+        className="navbar py-3"
+        role="navigation"
+        aria-label="main navigation"
+      >
         <div className="container">
-          <div className="navbar-brand  ">
-            <a className="navbar-item" href="/">
+          <div className="navbar-brand ">
+            <a className="navbar-brand ml-2" href="/">
               <img src="images/cropped-logo-1.png" alt="logo" />
             </a>
             <button
@@ -69,9 +75,9 @@ export default function Header({ background }) {
                 <Link to="/#about" className="navbar-item ml-4 is-hovered">
                   About
                 </Link>
-                <Link to="/ " className="navbar-item ml-4 is-hovered">
+                {/* <Link to="/" className="navbar-item ml-4 is-hovered">
                   Portfolio
-                </Link>
+                </Link> */}
                 <Link
                   to="/#testimonial"
                   className="navbar-item  ml-4 is-hovered"

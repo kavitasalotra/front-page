@@ -39,7 +39,11 @@ export default function BlogItem({ post }) {
                     {item.description}
                   </p>
                   <span>
-                    <Link to href="# " className="footer-item is-hovered ">
+                    <Link
+                      to
+                      href="/blogs"
+                      className="footer-item is-hovered is-flex is-align-items-center"
+                    >
                       <IoIosArrowDroprightCircle className="mr-3" /> Read more
                     </Link>
                   </span>

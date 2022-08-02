@@ -21,14 +21,14 @@ reviews:
       choose from.Illdy might be exactly what you need.
       It is a slick theme with a lot of of features to
       choose from'
-    authorName: 'John Doe'
+    user: 'John Doe'
 
   - id: 3
     image: 'images/Testimonial-3.jpg'
     description: 'Awesome theme with great design and awesome support. If you don’t know how to code your own WordPress theme, but you still want a good-looking website for your business, Illdy might be exactly what you need. It is a slick theme with a lot of of features to choose from. You can customize whatever section you want  no matter what device your website is viewed on – it looks great.'
     user: 'Aigars Silkalns'
 
-  - id: 3
+  - id: 4
     image: 'images/Testimonial-4.jpg'
     description: 'Awesome theme with great design and helpful support. If you don’t know how to code your own WordPress theme, but you still want a good-looking website for your business, Illdy might be exactly what you need. It is a slick theme with a lot of of features to choose from. You can customize whatever section you want and   no matter what device your website is viewed on – it looks great.'
     user: 'Jane Smith'

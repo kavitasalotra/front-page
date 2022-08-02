@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 import { TiSocialFacebook } from 'react-icons/ti';
 import { FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 import Heading from './element/Heading';
@@ -58,28 +59,31 @@ export default function Team() {
                       </p>
                       <nav className="level is-mobile mt-3">
                         <div className="level-left">
-                          <a
-                            href=" "
+                          <Link
+                            to="https://www.facebook.com/"
                             className="level-item social-icons"
                             style={{ color: item.color }}
+                            target="_blank"
                           >
                             <TiSocialFacebook />
-                          </a>
-                          <a
-                            href=" "
+                          </Link>
+                          <Link
+                            to="https://twitter.com/"
                             className="level-item social-icons"
                             style={{ color: item.color }}
+                            target="_blank"
                           >
                             {' '}
                             <FaTwitter />
-                          </a>
-                          <a
-                            href=" "
+                          </Link>
+                          <Link
+                            to="https://www.linkedin.com/"
                             className="level-item social-icons"
                             style={{ color: item.color }}
+                            target="_blank"
                           >
                             <FaLinkedinIn />
-                          </a>
+                          </Link>
                         </div>
                       </nav>
                     </div>
